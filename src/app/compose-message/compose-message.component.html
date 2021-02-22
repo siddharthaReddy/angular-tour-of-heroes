@@ -1,0 +1,17 @@
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Contact Crisis Center:</h3>
+    <h4>Message:</h4>
+    <textarea [ngModel]="details"> </textarea>
+
+    <div>
+      <button (click)="save()">Save</button>
+      <button (click)="cancel()">Cancel</button>
+    </div>
+  </div>
+
+</div>

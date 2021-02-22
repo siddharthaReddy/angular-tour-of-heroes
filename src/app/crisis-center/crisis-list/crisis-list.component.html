@@ -1,0 +1,11 @@
+<ul class="crises">
+  <!-- async pipe If crises$ was declared Observable<> -->
+  <li *ngFor="let crisis of crises$ | async"
+    [class.selected]="crisis.id === selectedId">
+    <a [routerLink]="[crisis.id]">
+      <span class="badge">{{ crisis.id }}</span>{{ crisis.name }}
+    </a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
